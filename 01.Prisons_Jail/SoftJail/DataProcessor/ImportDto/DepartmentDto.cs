@@ -1,7 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using SoftJail.Data.Models;
 
-namespace SoftJail.DataProcessor
+namespace SoftJail.DataProcessor.ImportDto
 {
     public class DepartmentDto
     {
@@ -27,7 +26,7 @@ namespace SoftJail.DataProcessor
     public class CellDto
     {
         [Required]
-        [Range(typeof(int), "0", "1000")]
+        [Range(typeof(int), "1", "1000")]
         public int CellNumber { get; set; }
 
         [Required]

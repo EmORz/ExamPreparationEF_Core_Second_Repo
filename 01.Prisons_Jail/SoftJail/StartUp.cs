@@ -14,23 +14,24 @@
 
             Mapper.Initialize(config => config.AddProfile<SoftJailProfile>());
 
-            ResetDatabase(context, shouldDropDatabase: true);
+            ResetDatabase(context, shouldDropDatabase: false);
 
             var projectDir = GetProjectDirectory();
 
             ImportEntities(context, projectDir + @"Datasets/", projectDir + @"ImportResults/");
             ExportEntities(context, projectDir + @"ExportResults/");
 
-            using (var transaction = context.Database.BeginTransaction())
-            {
-                BonusTask(context);
-                transaction.Rollback();
-            }
+            BonusTask(context);
+
+            //using (var transaction = context.Database.BeginTransaction())
+            //{
+            //    transaction.Rollback();
+            //}
         }
 
         private static void BonusTask(SoftJailDbContext context)
         {
-            var bonusOutput = DataProcessor.Bonus.ReleasePrisoner(context, 5);
+            var bonusOutput = DataProcessor.Bonus.ReleasePrisoner(context, 13);
             Console.WriteLine(bonusOutput);
         }
 

@@ -17,7 +17,7 @@ namespace SoftJail.Data.Models
         public int Id { get; set; }
 
         [Required]
-        [MinLength(3), MaxLength(25)]
+        [StringLength(25, MinimumLength = 3)]
         public string Name { get; set; }
 
         public ICollection<Cell> Cells { get; set; }

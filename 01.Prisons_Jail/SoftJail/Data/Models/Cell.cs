@@ -5,12 +5,13 @@ namespace SoftJail.Data.Models
 {
     public class Cell
     {
-        //    •	Id – integer, Primary Key
+        //• Id – integer, Primary Key
         //•	CellNumber – integer in the range[1, 1000] (required)
         //•	HasWindow – bool (required)
         //•	DepartmentId - integer, foreign key
         //•	Department – the cell's department (required)
         //•	Prisoners - collection of type Prisoner
+
         public Cell(int cellNumber, bool hasWindow)
         {
             this.CellNumber = cellNumber;
@@ -31,8 +32,8 @@ namespace SoftJail.Data.Models
         [Required]
         public bool HasWindow { get; set; }
 
-        public int DepartmentId { get; set; }
-        [Required]
+        public int? DepartmentId { get; set; }
+        //[Required]
         public Department Department { get; set; }
 
         public ICollection<Prisoner> Prisoners { get; set; }

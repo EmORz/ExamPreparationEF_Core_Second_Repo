@@ -3794,11 +3794,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\ExamPreparationEF_Core_Second\\01.Prisons_Jail\\SoftJail\\SoftJail.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\ExamPreparationEF_Core_Second\\ExamPreparationEF_Core_Second_Repo\\01.Prisons_Jail\\SoftJail\\SoftJail.csproj",
       "projectName": "SoftJail",
-      "projectPath": "C:\\Users\\User\\Desktop\\ExamPreparationEF_Core_Second\\01.Prisons_Jail\\SoftJail\\SoftJail.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\ExamPreparationEF_Core_Second\\ExamPreparationEF_Core_Second_Repo\\01.Prisons_Jail\\SoftJail\\SoftJail.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\ExamPreparationEF_Core_Second\\01.Prisons_Jail\\SoftJail\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\ExamPreparationEF_Core_Second\\ExamPreparationEF_Core_Second_Repo\\01.Prisons_Jail\\SoftJail\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
